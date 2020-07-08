@@ -1,0 +1,792 @@
+/*these fonts are used in the bookblock's code*/
+@font-face {
+  font-family: 'arrows';
+  src:url('../fonts/arrows/arrows.eot');
+  src:url('../fonts/arrows/arrows.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/arrows/arrows.woff') format('woff'),
+    url('../fonts/arrows/arrows.ttf') format('truetype'),
+    url('../fonts/arrows/arrows.svg#arrows') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*bookblock code starts here */
+.bb-page {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+}
+
+.bb-vertical .bb-page {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.bb-horizontal .bb-page {
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.bb-page > div,
+.bb-outer,
+.bb-content,
+.bb-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bb-vertical .bb-content {
+  width: 200%;
+}
+
+.bb-horizontal .bb-content {
+  height: 00%;
+}
+
+.bb-page > div {
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.bb-vertical .bb-back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.bb-horizontal .bb-back {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+
+.bb-outer {
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.bb-overlay, 
+.bb-flipoverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.bb-flipoverlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bb-bookblock.bb-vertical > div.bb-page:first-child,
+.bb-bookblock.bb-vertical > div.bb-page:first-child .bb-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.bb-bookblock.bb-horizontal > div.bb-page:first-child,
+.bb-bookblock.bb-horizontal > div.bb-page:first-child .bb-back {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+/* Content display */
+.bb-content {
+  background: #fff;
+}
+
+.bb-vertical .bb-front .bb-content {
+  left: -100%;
+}
+
+.bb-horizontal .bb-front .bb-content {
+  top: -100%;
+}
+
+/* Flipping classes */
+.bb-vertical .bb-flip-next,
+.bb-vertical .bb-flip-initial {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.bb-vertical .bb-flip-prev {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.bb-horizontal .bb-flip-next,
+.bb-horizontal .bb-flip-initial {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.bb-horizontal .bb-flip-prev {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.bb-vertical .bb-flip-next-end {
+  -webkit-transform: rotateY(-15deg);
+  transform: rotateY(-15deg);
+}
+
+.bb-vertical .bb-flip-prev-end {
+  -webkit-transform: rotateY(-165deg);
+  transform: rotateY(-165deg);
+}
+
+.bb-horizontal .bb-flip-next-end {
+  -webkit-transform: rotateX(15deg);
+  transform: rotateX(15deg);
+}
+
+.bb-horizontal .bb-flip-prev-end {
+  -webkit-transform: rotateX(165deg);
+  transform: rotateX(165deg);
+}
+/*upto this, A part of bookblock code ends here*/
+
+
+
+/*common css for the page*/
+body {
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+h1{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+h1,h2,h3,h4,h6{
+  justify-content: center;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-family: "Libre Baskerville", Georgia, serif;;
+}
+p{
+  font-family: "Libre Baskerville", Georgia, serif;;
+}
+/*=======================satvik's css starts from here */
+
+
+
+/*  bookblock section css is here  */
+.bb-custom-wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+  box-shadow: 0 12px 20px -10px rgba(81,64,49,0.6);
+}
+
+.bb-bookblock {
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  position: relative;
+  -webkit-perspective: 1700px;
+  perspective: 1700px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .bb-bookblock {
+    height: 200px;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .bb-bookblock {
+    height: 350px;
+  }
+}
+
+.bb-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #fff;
+}
+
+#ramstory {
+  width:50%;
+  height: 100%;
+  float: left;
+  }
+
+.bb-custom-wrapper nav {
+  width: 100%;
+  height: 30px;
+  margin: 1em auto 0;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.bb-custom-wrapper nav a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 2px;
+  background: #72b890;
+  color: #fff;
+  font-size: 0;
+  margin: 2px;
+}
+
+.bb-custom-wrapper nav a:hover {
+  opacity: 0.6;
+}
+
+.bb-custom-icon:before {
+  font-family: 'arrows';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bb-custom-icon-first:before,
+.bb-custom-icon-last:before {
+  content: "\e002";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-arrow-right:before {
+  content: "\e003";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-first:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* ============================bookblock's css ends here*/
+
+
+/*how we can help Ram's section starts from here*/
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+.namancard-text a {
+    display: inline-block;
+    color: #fff;
+    background-color: #2196f3;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.namancard {
+    border-radius: 0;
+    box-shadow: 5px 5px 5px #e74c3c;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    background: #eccfcf;
+    font-weight: inherit;
+    font-style: initial;
+}
+
+.namancard:hover {
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px #9E9E9E;
+}
+
+.namancard-text a:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.namancard-text p {
+    font-size: 15px;
+    line-height: 28px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 230px;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*here how we can help  section ends */
+
+
+
+/* ============================from here flipcard's css starts*/
+
+#more {
+    display: none;
+}
+
+#more2 {
+    display: none;
+}
+
+#more3 {
+    display: none;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 100%;
+    height: 330px;
+    perspective: 1000px;
+}
+
+.flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card2:hover .flip-card-inner2 {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front2,
+.flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front2 {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back2 {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+.flip-card3 {
+    background-color: transparent;
+    width: 100%;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card3:hover .flip-card-inner3 {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front3,
+.flip-card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front3 {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back3 {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+@media (max-width: 768px) {
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 1000px;
+        perspective: 1000px;
+    }
+    .flip-card2 {
+        background-color: transparent;
+        width: 100%;
+        height: 1000px;
+        perspective: 1000px;
+    }
+    .flip-card3 {
+        background-color: transparent;
+        width: 100%;
+        height: 1000px;
+        perspective: 1000px;
+    }
+    .center {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+/*flipcard's css ends here*/
+
+
+
+
+/*frome here naman's code starts*/
+.my-row3 {
+    background-color: #ff726f;
+}
+
+.heading3 {
+    padding-top: 20px;
+    color: antiquewhite;
+    font-size: 60px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.list1 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.list2 {
+    margin-top: 35px;
+}
+
+.list1 li {
+    padding: 5px;
+    list-style: none;
+    margin-left: 22%;
+    margin-right: 22%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.list2 li {
+    margin-bottom: 10px;
+    list-style: none;
+    margin-right: 22%;
+    margin-left: 22%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.head {
+    padding-top: 20px;
+}
+
+.naman-im1 {
+    width: 200px;
+    height: 160px;
+    margin-right: 20%;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.naman-im2 {
+    width: 180px;
+    height: 160px;
+    margin-right: 20%;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.naman-im3 {
+    width: 200px;
+    height: 220px;
+    margin-right: 40%;
+    margin-left: 30%;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.boxed {
+    border: 0.5px solid red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #e74c3c;
+    text-align: center;
+    padding: 7px;
+    background-color: #Dc143C;
+}
+/*here naman's css ends */
+
+
+
+
+
+/*rakesh's css starts from here*/
+
+.rakeshstacked-rakeshcards {
+    position: relative;
+}
+.rakeshstacked-rakeshcards ul {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.rakeshstacked-rakeshcards li {
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0px #333;
+    list-style: none;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    transition: 0.5s ease transform;
+}
+
+.rakeshstacked-rakeshcards li:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.rakeshstacked-rakeshcards li.active:after {
+    display: none;
+}
+
+.rakeshstacked-rakeshcards li.active {
+    cursor: default;
+    box-shadow: 0 5px 10px 0px #333;
+    transition: 0.5s ease transform;
+}
+
+
+
+    .rakeshcontainer-fixed {
+      max-width: 767px;
+      margin: 0 auto;
+    }
+
+
+    .rakeshstacked-rakeshcards {
+      padding-top: 40px;
+      padding-bottom: 15px;
+    }
+
+    .rakeshstacked-rakeshcards-fanOut {
+      padding-bottom: 40px;
+    }
+
+#rakesh1, #rakesh2 ,#rakesh3,#rakesh4,#rakesh5, #rakesh6 ,#rakesh7{
+  width: 300px;
+  height: 210px;
+}
+@media only screen and (max-width: 600px) {
+  #rakesh1, #rakesh2 ,#rakesh3,#rakesh4,#rakesh5, #rakesh6 ,#rakesh7{
+  width: 200px;
+  height: 150px;
+}
+}
+
+.rakesh {
+  position: relative;
+  width: 100%;
+}
+
+.rakeshimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay_rakesh {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  opacity: 0;
+  transition: 1.5s ease;
+  background-color:  black;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 600px) {
+ .overlay_rakesh{
+  width: 200px;
+ 
+}
+}
+.rakesh:hover .overlay_rakesh {
+  opacity: 1;
+}
+
+.rakeshtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+.overlay_rakesh::-webkit-scrollbar {
+    display: none;
+}
+
+
+.overlay_rakesh{
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+/*rakesh's css ends here*/
+
+
+
+/*aaditya's / card's css starts from here*/
+
+.stack {
+    position: relative;
+    width: 35vw;
+    margin: 30px auto;
+}
+
+.stack>.sheet {
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    display: block;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    height: 35vw;
+    left: 0;
+    overflow: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#s1 {
+    background-image: linear-gradient(rgb(153, 245, 245), white);
+}
+
+#s2 {
+    background-image: linear-gradient(rgb(252, 168, 252), white);
+}
+
+#s3 {
+    background-image: linear-gradient(rgb(245, 194, 153), white);
+}
+
+#s4 {
+    background-image: linear-gradient(rgb(228, 245, 153), white);
+}
+
+/*aditya's css ends here*/
+
+
+
