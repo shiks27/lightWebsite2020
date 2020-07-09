@@ -4,9 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="Bookblock: A Content Flip Plugin - Demo 1" />
-		<meta name="keywords" content="javascript, jquery, plugin, css3, flip, page, 3d, booklet, book, perspective" />
-		<meta name="author" content="Codrops" />
+		
 
 	<!--css files used-->
 		<!--<link href="css/style.css" rel="stylesheet" type="text/css" />-->
@@ -18,8 +16,8 @@
 
 	<!--link scripts used-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
         <!--for how we can help ram section-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,38 +31,69 @@
 	<body style="background-color: rgb(169,169,169); width: 100%; max-width:100%;position: absolute;">
 
 		<!--==========================bookblock section starts from here-->
-		<h1>Story Of a College Student </h1>
-		<div class="container" >
-			<div class="main clearfix">
-				<div class="bb-custom-wrapper">
-					<div id="bb-bookblock" class="bb-bookblock">
-						<div class="bb-item" style="margin: 0 auto;">
-							<img id="ramstory"   src="img/network/bookblock/1.png" alt="image01"/><p >"Hello,  he is Ram, a college student. He sees some social problems around locality. Instead of blaming governments he wants to take control and do something for society.</p>
-						</div>
-						<div class="bb-item">
-							<img id="ramstory" src="img/network/bookblock/2.png" alt="image02"/><p >Ram feels helpless because neither he has a team nor guidance to solve these problems. He wants to discuss his ideas but he doesn’t know where to go.</p>
-						</div>
-						<div class="bb-item">
-							<img id="ramstory" src="img/network/bookblock/3.png" alt="image03"/><p >"He knows how to solve a theoretical problem but he never got a chance to work on the real-life problem.</p>
-						</div>
-						<div class="bb-item">
-							<img id="ramstory" src="img/network/bookblock/4.png" alt="image04"/><p >It is fourth image. you can add text here regarding it</p>
-						</div>
-						<div class="bb-item">
-							<img id="ramstory" src="img/network/bookblock/5.png" alt="image05"/><p >It is fifth image. you can add text here regarding it</p>
+		<section id="flipbook" class="bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="right-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at sem id nisl commodo luctus nec eu est.</p>
+							<br>
 						</div>
 					</div>
-					<nav>
-						<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-						<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-						<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-						<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
-					</nav>
+					<div class="col-md-7">
+						<nav>
+							<button id="bb-nav-prev"><i class="fa fa-caret-left"></i></button>
+							<button id="bb-nav-next"><i class="fa fa-caret-right"></i></button>
+						</nav>
+						<div class="bb-custom-wrapper">
+								
+							<div id="bb-bookblock" class="bb-bookblock">
+								<div class="bb-item cover">
+									<div class="container-fluid" style=" height: 100%; overflow: hidden;">
+										<div class="row" style="height: 100%;">
+											<div class="col-6" style="padding: 0;"><img src="img/network/bookblock/cover.jpg" style="height: 100%;"></div>
+											<div class="col-6">
+												<img src="img/network/bookblock/ram1.png" style="margin-top: 10px;">
+												<p style="margin-top: 10px;">Hello,  he is Ram, a college student. He sees some social problems around locality. Instead of blaming governments he wants to take control and do something for society.</p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="bb-item">
+									<div class="container-fluid" style=" height: 100%; overflow: hidden;">
+										<div class="row">
+											<div class="col-6">
+												<img src="img/network/bookblock/ram2.png" style="margin-top: 10px;">
+												<p style="margin-top: 15px;">Ram feels helpless because neither he has a team nor guidance to solve these problems. He wants to discuss his ideas but he doesn’t know where to go.</p>
+											</div>
+											<div class="col-6">
+												<img src="img/network/bookblock/ram3.png" style="margin-top: 10px;">
+												<p style="margin-top: 30px;">He knows how to solve a theoretical problem but he never got a chance to work on the real-life problem.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							<!-- <nav>
+								<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+								<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+								<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+								<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+							</nav> -->
+							
+						</div>
+					</div>
+					
 				</div>
 			</div>
-		</div>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="networkJS/jquerypp.custom.js"></script>
 		<script src="networkJS/jquery.bookblock.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script>
 			var Page = (function() {
 				
@@ -79,10 +108,7 @@
 						config.$bookBlock.bookblock( {
 							speed : 800,
 							shadowSides : 0.8,
-							shadowFlip : 0.7,
-							circular: true,
-							autoplay: true,
-							interval: 4000
+							shadowFlip : 0.7
 						} );
 						initEvents();
 					},
@@ -150,6 +176,7 @@
 		</script>
 		<script>
 				Page.init();
+				
 		</script>
 	<!--================================bookblock section code ends here   --->
 		
