@@ -813,20 +813,13 @@
 
 <!--========================from here the aaditya's card code starts ===========-->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
-    <script src="networkJS/paperstack.js"></script>
+    
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 
-    <script>
-        $(document).ready(function() {
-            var stack = $('.stack').paperstack({});
-
-            $('#aadityanext').click(stack.next);
-            $('#aadityaprev').click(stack.previous);
-        });
-    </script>
+  
     
 <div class="temp" >
     <h1>What Extra help can we give?</h1>
@@ -964,11 +957,21 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+	<script src="networkJS/paperstack.js"></script>
+	  <script>
+        $(document).ready(function() {
+            var stack = $('.stack').paperstack({});
+
+            $('#aadityanext').click(stack.next);
+            $('#aadityaprev').click(stack.previous);
+        });
+    </script>
 
 </body>
 </html>
