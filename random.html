@@ -149,125 +149,148 @@
   
 
     <!--==========================bookblock section starts from here-->
-    <h1>Story Of a College Student </h1><br>
-    
-    <div class="container" >
-      <div class="main clearfix">
-        <div class="bb-custom-wrapper">
-          <div id="bb-bookblock" class="bb-bookblock">
-            <div class="bb-item" style="margin: 0 auto;">
-              <img id="ramstory"   src="img/network/bookblock/1.png" alt="image01"/><p >"Hello,  he is Ram, a college student. He sees some social problems around locality. Instead of blaming governments he wants to take control and do something for society.</p>
-            </div>
-            <div class="bb-item">
-              <img id="ramstory" src="img/network/bookblock/2.png" alt="image02"/><p >Ram feels helpless because neither he has a team nor guidance to solve these problems. He wants to discuss his ideas but he doesn’t know where to go.</p>
-            </div>
-            <div class="bb-item">
-              <img id="ramstory" src="img/network/bookblock/3.png" alt="image03"/><p >"He knows how to solve a theoretical problem but he never got a chance to work on the real-life problem.</p>
-            </div>
-            <div class="bb-item">
-              <img id="ramstory" src="img/network/bookblock/4.png" alt="image04"/><p >It is fourth image. you can add text here regarding it</p>
-            </div>
-            <div class="bb-item">
-              <img id="ramstory" src="img/network/bookblock/5.png" alt="image05"/><p >It is fifth image. you can add text here regarding it</p>
-            </div>
-          </div>
-          <nav>
-            <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-            <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-            <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-            <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <script src="networkJS/jquerypp.custom.js"></script>
-    <script src="networkJS/jquery.bookblock.js"></script>
-    <script>
-      var Page = (function() {
-        
-        var config = {
-            $bookBlock : $( '#bb-bookblock' ),
-            $navNext : $( '#bb-nav-next' ),
-            $navPrev : $( '#bb-nav-prev' ),
-            $navFirst : $( '#bb-nav-first' ),
-            $navLast : $( '#bb-nav-last' )
-          },
-          init = function() {
-            config.$bookBlock.bookblock( {
-              speed : 800,
-              shadowSides : 0.8,
-              shadowFlip : 0.7,
-              circular: true,
-              autoplay: true,
-              interval: 4000
-            } );
-            initEvents();
-          },
-          initEvents = function() {
-            
-            var $slides = config.$bookBlock.children();
+    <section id="flipbook" class="bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="right-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at sem id nisl commodo luctus nec eu est.</p>
+							<br>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<nav>
+							<button id="bb-nav-prev"><i class="fa fa-caret-left"></i></button>
+							<button id="bb-nav-next"><i class="fa fa-caret-right"></i></button>
+						</nav>
+						<div class="bb-custom-wrapper">
+								
+							<div id="bb-bookblock" class="bb-bookblock">
+								<div class="bb-item cover">
+									<div class="container-fluid" style=" height: 100%; overflow: hidden;">
+										<div class="row" style="height: 100%;">
+											<div class="col-6" style="padding: 0;"><img src="img/network/bookblock/cover.jpg" style="height: 100%;"></div>
+											<div class="col-6">
+												<img src="img/network/bookblock/ram1.png" style="margin-top: 10px;">
+												<p style="margin-top: 10px;">Hello,  he is Ram, a college student. He sees some social problems around locality. Instead of blaming governments he wants to take control and do something for society.</p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="bb-item">
+									<div class="container-fluid" style=" height: 100%; overflow: hidden;">
+										<div class="row">
+											<div class="col-6">
+												<img src="img/network/bookblock/ram2.png" style="margin-top: 10px;">
+												<p style="margin-top: 15px;">Ram feels helpless because neither he has a team nor guidance to solve these problems. He wants to discuss his ideas but he doesn’t know where to go.</p>
+											</div>
+											<div class="col-6">
+												<img src="img/network/bookblock/ram3.png" style="margin-top: 10px;">
+												<p style="margin-top: 30px;">He knows how to solve a theoretical problem but he never got a chance to work on the real-life problem.
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="networkJS/jquerypp.custom.js"></script>
+		<script src="networkJS/jquery.bookblock.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 800,
+							shadowSides : 0.8,
+							shadowFlip : 0.7
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
 
-            // add navigation events
-            config.$navNext.on( 'click touchstart', function() {
-              config.$bookBlock.bookblock( 'next' );
-              return false;
-            } );
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
 
-            config.$navPrev.on( 'click touchstart', function() {
-              config.$bookBlock.bookblock( 'prev' );
-              return false;
-            } );
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
 
-            config.$navFirst.on( 'click touchstart', function() {
-              config.$bookBlock.bookblock( 'first' );
-              return false;
-            } );
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
 
-            config.$navLast.on( 'click touchstart', function() {
-              config.$bookBlock.bookblock( 'last' );
-              return false;
-            } );
-            
-            // add swipe events
-            $slides.on( {
-              'swipeleft' : function( event ) {
-                config.$bookBlock.bookblock( 'next' );
-                return false;
-              },
-              'swiperight' : function( event ) {
-                config.$bookBlock.bookblock( 'prev' );
-                return false;
-              }
-            } );
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
 
-            // add keyboard events
-            $( document ).keydown( function(e) {
-              var keyCode = e.keyCode || e.which,
-                arrow = {
-                  left : 37,
-                  up : 38,
-                  right : 39,
-                  down : 40
-                };
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
 
-              switch (keyCode) {
-                case arrow.left:
-                  config.$bookBlock.bookblock( 'prev' );
-                  break;
-                case arrow.right:
-                  config.$bookBlock.bookblock( 'next' );
-                  break;
-              }
-            } );
-          };
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
 
-          return { init : init };
+					return { init : init };
 
-      })();
-    </script>
-    <script>
-        Page.init();
-    </script>
+			})();
+		</script>
+		<script>
+				Page.init();
+				
+		</script>
   <!--================================bookblock section code ends here   --->
   
   
