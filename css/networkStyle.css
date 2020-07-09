@@ -1041,13 +1041,22 @@ a img {
 
 /*aaditya's / card's css starts from here*/
 
+.buttons {
+    padding-left: 45%;
+}
+
 .stack {
     position: relative;
     width: 35vw;
     margin: 30px auto;
+    height: 35vw;
 }
 
-.stack>.sheet {
+.sheet {
+    font-size: 1.5vw;
+}
+
+.sheet {
     position: absolute;
     transition: all 300ms ease-in-out;
     display: block;
@@ -1056,7 +1065,7 @@ a img {
     width: 100%;
     height: 35vw;
     left: 0;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1076,6 +1085,19 @@ a img {
     background-image: linear-gradient(rgb(228, 245, 153), white);
 }
 
+@media (max-width: 700px) {
+    .stack {
+        width: 300px;
+        height: 300px;
+    }
+    .sheet {
+        font-size: 12px;
+        height: 300px;
+    }
+    .buttons {
+        padding-left: 37%;
+    }
+}
 /*aditya's css ends here*/
 
 
