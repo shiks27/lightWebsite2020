@@ -5,6 +5,7 @@
 /*common css for the page*/
 body {
   font-family: "Libre Baskerville", Georgia, serif;
+  overflow-x: hidden;
 }
 h1{
   text-decoration-color: black;
