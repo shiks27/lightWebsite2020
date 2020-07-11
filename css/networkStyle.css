@@ -1,10 +1,6 @@
-
-
-
-
 /*common css for the page*/
 body {
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
 h1{
@@ -15,11 +11,9 @@ h1,h2,h3,h4,h6{
   text-align: center;
   color: red;
   font-weight: bold;
-  font-family: "Libre Baskerville", Georgia, serif;;
+
 }
-p{
-  font-family: "Libre Baskerville", Georgia, serif;;
-}
+
 /*=======================akshay's css starts from here */
 
 /* General Demo Style */
@@ -44,7 +38,7 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 .clearfix:after { clear: both; }
 
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+
 	color: #777;
 	background: #f6f6f6;
 }
