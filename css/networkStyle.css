@@ -1420,19 +1420,19 @@ a img {
 }
 
 #s1 {
-    background-image: linear-gradient(rgb(153, 245, 245), white);
+    background-image: linear-gradient(#18d26e, white);
 }
 
 #s2 {
-    background-image: linear-gradient(rgb(252, 168, 252), white);
+    background-image: linear-gradient(rgb(59,64,70), white);
 }
 
 #s3 {
-    background-image: linear-gradient(rgb(245, 194, 153), white);
+    background-image: linear-gradient(#18d26e, white);
 }
 
 #s4 {
-    background-image: linear-gradient(rgb(228, 245, 153), white);
+    background-image: linear-gradient(rgb(59,64,70), white);
 }
 
 @media (max-width: 700px) {
