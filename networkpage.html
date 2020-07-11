@@ -654,53 +654,75 @@
 
 
 <!--from here, the naman's task starts -->
-<div class="container-fluid" style="margin-top: 150px;">
-            <div class="row">
-                <div class="col  col-md-6 col-sm-12 col-12" style="background-color: #808080; color: aliceblue;">
-                    <h2 class="head">Difference from other platforms</h2>
-                    <div class="row">
-
-                        <div class="image col-md-6 col-sm-12 col-12">
-                            <img src="img/network/col1.png" class="naman-im1" alt="#">
+<div class="container-fluid" style="margin-top: 80px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 bg-dark" style="padding: 30px;">
+                    <header class="section-header">
+                      <h3 style="color: white;">Difference from other platforms</h3>
+                    </header>
+                    <div class="container mt-4">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <center><img src="img/network/col1.png" class="naman-im1"></center>
                         </div>
-                        <div class="content col-md-6 col-sm-12 col-12">
-
-                            <p style="margin-right: 10%;margin-left: 10%; margin-top: 30px; margin-bottom: 30px;text-align: left;line-height: 150%;font-size: small;">
-                                Student-run: The complete <span style="font-weight: bold;">LIGHT</span> network is run by students studying in different colleges of the country. Being a student run body enables better understanding and communication between
-                                members.
-                            </p>
-
-
+                        <div class="col-md-6 student-run">
+                          <p style="color: white;">Student-run: The complete <b style="color: #18d26e;">LiGHT</b> network is run by students studying in different colleges of the country. Being a student run body enables better understanding and communication between
+                            members.</p>
                         </div>
+
+                      </div>
                     </div>
+                  </div>
+                  <div class="bg-light col-lg-6" style="padding: 30px;">
+                    <header class="section-header">
+                      <h3>Our Reach</h3>
+                    </header>
+                      <div class="container mt-4">
+                        <div class="row justify-content-center">
+  
+                          <!-- <div class="image col-md-4 col-sm-12 col-12">
+                              <img src="img/network/col2.png" alt="#" class="naman-im2">
+                          </div>
+                          <div class="content col-md-8 col-sm-12 col-12">
+  
+                              <p>
+                                  <ul style="margin-right: 15%;margin-left:15%;margin-top: 30px; margin-bottom: 30px;text-align: left;line-height: 150%;font-size: small;">
+                                      <li>We have a nationwide reach with total 14 centres present across the country spread across 12 states.</li>
+                                      <li>More than 161 active members are associated with LiGHT through various centes.</li>
+                                  </ul>
+                              </p>
+  
+  
+                          </div> -->
+                          <div class="col-md-4 text-center">
+                            <div class="reach-card">
+                              <span class="counter">14</span><br>
+                              CENTRES<br><br>
+                            </div>
+                          </div>
+                          <div class="col-md-4 text-center">
+                            <div class="reach-card">
+                              <span class="counter">12</span><br>
+                              STATES<br><br>
+                            </div>
+                          </div>
+                          <div class="col-md-4 text-center">
+                            <div class="reach-card">
+                              <span class="plus"><span class="counter">160</span>+</span><br>
+                              ACTIVE MEMBERS<br><br>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
                 </div>
 
-                <div class="col bg-warning col-md-6 col-sm-12 col-12">
-                    <h2 class="head">Our Reach
-                    </h2>
-                    <div class="row">
-
-                        <div class="image col-md-4 col-sm-12 col-12">
-                            <img src="img/network/col2.png" alt="#" class="naman-im2">
-                        </div>
-                        <div class="content col-md-8 col-sm-12 col-12">
-
-                            <p>
-                                <ul style="margin-right: 15%;margin-left:15%;margin-top: 30px; margin-bottom: 30px;text-align: left;line-height: 150%;font-size: small;">
-                                    <li>We have a nationwide reach with total 14 centres present across the country spread across 12 states.</li>
-                                    <li>More than 161 active members are associated with LiGHT through various centes.</li>
-                                </ul>
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
         </div>
         <div class="my-row3">
-            <h1 class="heading3" style="">Incentives</h1>
+            <h1 class="heading3">Incentives</h1>
 
 
             <div class="row ">
@@ -1012,7 +1034,10 @@
 	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-	<script src="networkJS/paperstack.js"></script>
+  <script src="networkJS/paperstack.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="networkJS/jquery.counterup.min.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
@@ -1022,8 +1047,13 @@
 
             $('#aadityanext').click(stack.next);
             $('#aadityaprev').click(stack.previous);
+
+            $('.counter').counterUp({
+              time: 2000
+            })
         });
     </script>
+
 
 </body>
 </html>

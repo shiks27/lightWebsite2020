@@ -879,12 +879,32 @@ a img {
 }
 
 .naman-im1 {
-    width: 200px;
-    height: 160px;
-    margin-right: 20%;
-    margin-left: 30%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 60%;
+    margin: auto;
+}
+.student-run p {
+    margin-top: 20px;
+}
+.reach-card {
+    background-color: #18d26e;
+    padding: 20px 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reach-card .counter, .reach-card .plus {
+    font-size: 40px;
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .naman-im1 {
+        margin: 0 auto 25px;
+    }
+    .student-run p {
+        margin-top: 10px;
+    }
 }
 
 .naman-im2 {
