@@ -729,7 +729,32 @@ a img {
   }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 600px){
+  .flip-card{
+    height: 310px;
+  }
+  .flip-card:hover{
+    height: 450px;
+  }
+  .flip-card:hover .flip-card-inner {
+      transform: rotateX(180deg);
+  }
+
+
+	.boxed1{
+    height: 170px;
+	}
+  .col-12{
+    text-align: center;
+  }
+  .center {
+      align: center;
+      height:120px;
+      width: 120px;
+      margin-top: 20px;
+  }
+}
+@media (max-width: 768px) and (min-width: 600px){
   .flip-card{
     height: 280px;
   }
@@ -817,7 +842,35 @@ a img {
 #ch{
   text-align: center;
 }
-  @media (max-width: 768px) {
+@media (max-width: 600px){
+
+  .center2 {
+    margin-top: 20px;
+   width: 120px;
+   height: 120px;
+
+  }
+
+  .flip-card2{
+    height: 480px;
+  }
+  .flip-card2:hover{
+    height: 800px;
+  }
+  .flip-card2:hover .flip-card-inner2 {
+      transform: rotateX(180deg);
+  }
+
+
+  .boxed2{
+    height: 200px;
+    margin-top: 20px;
+  }
+  .col-12{
+    text-align: center;
+  }
+}
+  @media (max-width: 768px) and (min-width: 600px){
 
     .center2 {
       margin-top: 40px;
@@ -904,8 +957,26 @@ a img {
       height: 350px;
     }
   }
+@media (max-width: 600px){
 
-  @media (max-width: 768px) {
+  .center3 {
+    margin-top: 40px;
+   width: 100px;
+   height: 100px;
+
+  }
+
+  .flip-card3{
+    height: 450px;
+  }
+  .flip-card3:hover{
+    height: 400px;
+  }
+  .flip-card3:hover .flip-card-inner3 {
+      transform: rotateX(180deg);
+  }
+}
+  @media (max-width: 768px) and (min-width: 600px) {
 
     .center3 {
       margin-top: 40px;
