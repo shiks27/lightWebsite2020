@@ -1052,7 +1052,7 @@ a img {
 .stack {
     position: relative;
     width: 35vw;
-    margin: 30px auto;
+    margin: 30px 0;
     height: 35vw;
 }
 
@@ -1101,6 +1101,30 @@ a img {
     .buttons {
         padding-left: 37%;
     }
+    #aadityaprev {
+        left: 27px !important;
+    }
+    #aadityanext {
+        right: 27px !important;
+    }
+}
+#aadityaprev {
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    z-index: 200;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+#aadityanext {
+    position: absolute;
+    right: 20%;
+    top: 45%;
+    z-index: 200;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
 }
 /*aditya's css ends here*/
 
