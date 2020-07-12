@@ -622,17 +622,17 @@ a img {
 
 .namancard {
     border-radius: 0;
-    box-shadow: 5px 5px 5px #e74c3c;
+    box-shadow: 5px 5px 5px #18d26e;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
-    background: #eccfcf;
+    background: #fdfdfd;
     font-weight: inherit;
     font-style: initial;
 }
 
 .namancard:hover {
-    background: #e74c3c;
+    background: #18d26e;
     color: #fff;
     border-radius: 5px;
     border: none;
