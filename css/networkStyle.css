@@ -548,6 +548,7 @@ a img {
 }
 
 #bb-nav-prev {
+	background-image: url(../img/network/lines.png);
 	position: absolute;
 	top: 0;
 	left: 15px;
@@ -562,6 +563,7 @@ a img {
 
 }
 #bb-nav-next {
+	background-image: url(../img/network/lines.png);
 	position: absolute;
 	top: 0;
 	right: 15px;
