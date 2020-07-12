@@ -1239,3 +1239,60 @@ a img {
     cursor: pointer;
 }
 /*aditya's css ends here*/
+
+
+/*****social workers page*****/
+#worker-head {
+  background-image: url("../img/homepage/1.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+}
+#worker-head header {
+  padding-top: 250px;
+}
+@media (max-width: 992px) and (min-width: 760px) {
+  #worker-head {
+    height: 300px;
+  }
+  #worker-head header {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 760px) {
+  #worker-head {
+    height: 300px;
+  }
+  #worker-head header {
+    padding-top: 100px;
+  }
+}
+.worker-card {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.worker-card img {
+  width: 30%;
+}
+.worker-card p {
+  margin-top: 20px;
+}
+.worker-card-2 {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.worker-card-2:hover {
+  transform: translateY(-4px);
+}
+
+.worker-card-2 img {
+  width: 50%;
+}
