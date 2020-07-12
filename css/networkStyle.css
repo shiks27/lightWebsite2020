@@ -638,7 +638,9 @@ a img {
     border: none;
     box-shadow: 5px 5px 5px #9E9E9E;
 }
-
+.namancard img {
+    margin-top: 25px;
+}
 .namancard-text a:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
