@@ -677,6 +677,9 @@ a img {
     text-align: center;
     font-size: 20px;
     margin-top: 15px;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   #ch2{
     font-size: 12px;
@@ -685,6 +688,8 @@ a img {
     text-align: center;
     font-size: 20px;
     margin-top: 40px;
+    color: white;
+    
   }
   .top2{
     height:770px;
@@ -703,6 +708,7 @@ a img {
     font-size: 14px;
     margin-top: 10px;
     padding: 2%;
+    color: white;
   }
   .qa2{
     display: block;
@@ -731,6 +737,9 @@ a img {
     text-align: center;
     font-size: 34px;
     margin-top: 15px;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   #ch2{
     font-size: 20px;
@@ -740,12 +749,16 @@ a img {
     text-align: center;
     font-size: 34px;
     margin-top: 25px;
+    color: white;
+
+
   }
   #ch4{
     position: relative;
     font-size: 20px;
     top: -30px;
     padding: 2%;
+    color: white;
   }
   .top2{
     height:380px;
