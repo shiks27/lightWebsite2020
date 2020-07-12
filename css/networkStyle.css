@@ -705,8 +705,15 @@ a img {
     padding: 2%;
   }
   .qa2{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
     height: 40px;
     width: 40px;
+
+  }
+  #x4{
+    text-align: center;
 
   }
 }
