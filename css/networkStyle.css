@@ -1301,26 +1301,20 @@ a img {
 }
 
 .my-card {
-    height: 16vw;
-    width: 24vw;
+    width: 100%;
+    padding: 40px auto;
 }
 
 .my-card-inner {
-    position: relative;
     width: 100%;
-    height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
 
 .card-front {
-    height: 100%;
     width: 100%;
     background-position: 50% 50%;
     background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: 1s;
@@ -1331,12 +1325,13 @@ a img {
 }
 
 .card-back {
-    position: relative;
     border-radius: 18px;
     background-color: black;
     padding: 5px;
-    transition: 1s;
+    position: absolute;
+    top: 0;
     height: 100%;
+    transition: 1s;
     width: 100%;
     transform: rotateX(180deg);
     -webkit-backface-visibility: hidden;
@@ -1346,7 +1341,7 @@ a img {
 .card-back {
     color: white;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 15px;
 }
 
 #p1 {
