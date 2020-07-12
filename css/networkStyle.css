@@ -644,7 +644,8 @@ a img {
 }
 
 .namancard-text p {
-    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 28px;
     padding-left: 10%;
     padding-right: 10%;
