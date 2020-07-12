@@ -232,16 +232,20 @@ function myFunction1() {
   var x = document.getElementById("rajseemore1");
   if (x.style.display === "none") {
     x.style.display = "block";
+    document.getElementById("rajseeless1").innerHTML = "see less";
   } else {
     x.style.display = "none";
+    document.getElementById("rajseeless1").innerHTML = "see more";
   }
   
   function myFunction2() {
   var x = document.getElementById("rajseemore2");
   if (x.style.display === "none") {
     x.style.display = "block";
+    document.getElementById("rajseeless2").innerHTML = "see less";
   } else {
     x.style.display = "none";
+    document.getElementById("rajseeless2").innerHTML = "see more";
   }
 }
   </script>
