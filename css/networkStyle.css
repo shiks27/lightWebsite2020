@@ -14,7 +14,19 @@ h1,h2,h3,h4,h6{
 
 }
 
-#more {display: none;}
+.comment {
+	width: 400px;
+	background-color: #f0f0f0;
+	margin: 10px;
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+
+}
 
 /*=======================akshay's css starts from here */
 
