@@ -51,21 +51,3 @@
 .member-card .member-social-strip a:hover {
     color: #18d26e;
 }
-.owl-next {
-    position: absolute;
-    right: -20px;
-    bottom: 50%;
-}
-.owl-prev {
-    position: absolute;
-    left: -20px;
-    bottom: 50%;
-}
-@media (max-width: 500px) {
-    .owl-next {
-        right: -15px;
-    }
-    .owl-prev {
-        left: -15px;
-    }
-}
