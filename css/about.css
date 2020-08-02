@@ -371,7 +371,31 @@ button.btn {
     border-radius: 8px;
     outline: none;
 }
+#about-read-more-1 {
+    font-size: larger;
+    border: 2px solid #18d26e;
+    padding: 5px 20px;
+    color: #18d26e;
+    background-color: white;
+    border-radius: 8px;
+    outline: none;
+}
+#about-read-more-2 {
+    font-size: larger;
+    border: 2px solid #18d26e;
+    padding: 5px 20px;
+    color: #18d26e;
+    background-color: white;
+    border-radius: 8px;
+    outline: none;
+}
 .read-more-content {
+    display: none;
+}
+.read-more-content-1 {
+    display: none;
+}
+.read-more-content-2 {
     display: none;
 }
 img.founder-img {
