@@ -99,25 +99,49 @@
             It can only be understood by real-life experiences by encountering these problems.</p>
             <p class="text-center text-dark" style="font-size: 16px;">Secondly, even if they are well aware of the real-world scenarios there was a lack of platform or proper guidance & a team of like-minded people to execute their ideas regarding existing social problems.
             This gap could only be filled through early exposure to these social problems. We have to motivate the youth of our country to consider these bottlenecks in our country’s progress as their 
-            own problems and provide them with a platform to execute their solutions and develop problem-solving skills. The zeal to fill this gap became the cause of the birth of the Gopali Youth Welfare Society.</p>
-        </div>
-        <div class="container pt-4" align="right">
-                <button id="about-read-more">Read More</button>
-            <div class="text-center text-dark read-more-content pt-4">
-                <p>
-                    A total student-run organization started back in 2004, We are now managing a school for underprivliged children of their own, providing quality education to more than 250 underprivileged students from the 
-                    areas in and around Kharagpur. We also conduct skill development programs like tailoring, computer training, etc, and have many other small initiatives with an annual budget of around 30+ Lakhs managed 
-                    solely by a group of students from IIT Kharagpur.
-                </p>
-                <p>
-                    After the success of strategies and plans of the Gopali Youth Welfare Society (GYWS) near the area of IIT Kharagpur ,the society planned to reciprocate similar models of social upliftment throughout the
-                    nation so as to create a greater impact by spreading knowledge and experience gained through such long journey of social service and hence came up with the initiative named LIGHT to reach to 
-                    masses all over India.
-                </p>
-            </div>
+            own problems and provide them with a platform to execute their solutions and develop problem-solving skills.
+                The zeal to fill this gap became the cause of the birth of the Gopali Youth Welfare Society.
+            <button onclick="changeContent()" id="about-read-more">..read more</button>
+            <!--<span id="read-more-dots">...</span>-->
+            <span id="read-more-content">
+            <br>
+            <br>
+              A total student-run organization started back in 2004, We are now managing a school for underprivliged children of their own, providing quality education to more than 250 underprivileged students from the 
+              areas in and around Kharagpur. We also conduct skill development programs like tailoring, computer training, etc, and have many other small initiatives with an annual budget of around 30+ Lakhs managed 
+              solely by a group of students from IIT Kharagpur.<br><br>
+              After the success of strategies and plans of the Gopali Youth Welfare Society (GYWS) near the area of IIT Kharagpur ,the society planned to reciprocate similar models of social upliftment throughout the
+              nation so as to create a greater impact by spreading knowledge and experience gained through such long journey of social service and hence came up with the initiative named LIGHT to reach to 
+              masses all over India.<button onclick="changeContent()" id="about-read-less">..read less</button></span></p>
+            </p>
+        
             <hr>
         </div>
     </section>
+    
+    <script>
+          function changeContent() {
+  var dots = document.getElementById("read-more-dots");
+  var moreText = document.getElementById("read-more-content");
+  var btnTextfst = document.getElementById("about-read-more");
+  var btnTextsnd = document.getElementById("about-read-less");
+
+  if(moreText.style.display=="none"){
+    //dots.style.display = "none";
+    btnTextfst.style.display="none";
+    btnTextsnd.style.display="inline";
+    moreText.style.display = "inline";
+  }
+  else //(moreText.style.display != "none") 
+  {
+    //dots.style.display = "inline";
+    
+    btnTextfst.style.display="inline";
+    btnTextsnd.style.display="none";
+    moreText.style.display = "none";
+  }
+  
+}
+        </script>
     
     <!---vision and mission section-->
 <div class="parallax2">
