@@ -101,3 +101,53 @@ img.founder-img {
         margin-top: 10px;
     }
 }
+.box2{
+
+	  z-index: 2; /* The z-index should be higher than Google Maps */
+
+
+
+	  padding: 5%;
+	  background: #FDD329;
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: black;
+
+	   opacity:0.8;
+	   width:104%;
+}
+
+.box3{
+
+	  z-index:-1; /* The z-index should be higher than Google Maps */
+
+
+
+	  padding: 5%;
+	  background:black;
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: white;
+
+	   opacity:0.6;
+	   width:104%;
+
+
+}
+.parallax2{
+	width:100%;
+	margin-left:0px;
+	 background:url(../img/about/background2.png);
+    background-attachment:fixed;
+    -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+
+
+	}
+	@media screen and (max-width: 600px) {
+		.box4{ width:100%;}
+		.box3{width:100%;}
+		.box2{width:100%;}
+	}
