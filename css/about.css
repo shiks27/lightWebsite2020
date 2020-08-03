@@ -108,10 +108,10 @@ img.founder-img {
 
 
 	  padding: 5%;
-	  background: #FDD329;
+	  background: solid #FDD329;
 
 	  opacity:; /* Set the opacity for a slightly transparent Google Form */
-	  color: black;
+	  color: solid black;
 
 	   opacity:0.8;
 	   width:104%;
@@ -124,10 +124,10 @@ img.founder-img {
 
 
 	  padding: 5%;
-	  background:black;
+	  background: solid black;
 
 	  opacity:; /* Set the opacity for a slightly transparent Google Form */
-	  color: white;
+	  color: solid white;
 
 	   opacity:0.6;
 	   width:104%;
