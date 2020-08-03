@@ -137,7 +137,7 @@ img.founder-img {
 .parallax2{
 	width:100%;
 	margin-left:0px;
-	 background:url(../img/about/background2.png);
+	 background:url(background2.png);
     background-attachment:fixed;
     -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
     background-size:cover;
