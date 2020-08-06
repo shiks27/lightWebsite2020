@@ -116,6 +116,8 @@ body {
     margin-left: -1%;
 }
 .center {
+  position:relative;
+  top:-44px;
   display: flex;
   justify-content: center;
   align-items: center;
