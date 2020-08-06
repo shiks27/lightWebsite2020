@@ -224,3 +224,40 @@ img:not(.prof-img) {
     -ms-touch-action: auto;
         touch-action: auto;
 }
+.carousel{
+	width: 100%;
+}
+.glyphicon{
+	font-size: 40px;
+	font-weight: 900;
+	color: #18d26e;
+	top: 40%;
+/*
+	background: white;
+*/
+}
+
+.glyphicon-menu-right{
+	display: inline;
+	margin: 0 auto;
+}
+
+.carousel-control{
+	background: white;
+}
+
+.carousel-indicators li{
+	background-color: #02b856;
+	opacity: 0.5;
+}
+
+.carousel-indicators .active{
+	background-color: #02b856;
+	opacity: 1;
+}
+
+.carousel-indicators{
+	position: absolute;
+	bottom: 0;
+	top: 100%;
+}
