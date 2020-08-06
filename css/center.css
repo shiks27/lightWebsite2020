@@ -252,10 +252,7 @@ svg {
         font-size: 12px;
         text-align: center;
         background: white;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 7px;
-	padding-bottom:7px;
+        padding: 1px 15px;
         z-index: 5;
         height: 30px;
         line-height: 12px;
