@@ -320,6 +320,7 @@ svg {
 }
 
 .button {
+    cursor: pointer;
     padding: 5px 8px;
     font-size: 20px;
     border: solid 1px #18d26e;
