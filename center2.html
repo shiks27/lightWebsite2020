@@ -32,14 +32,14 @@
    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-     <link rel="stylesheet" href="css/style1.css">
+
 
 
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/center2.css" rel="stylesheet">
-
+  <link href="css/style1.css" rel="stylesheet">
 
 
 
@@ -155,26 +155,27 @@
         <div class="container">
           <div class="section-header">
             <h3>LiGHT Pallakad</h3>
-            <p>LiGHT has come up with a platform to accomplish the necessities of the feeble fragments of a community. It is a unique body whose fabric has been woven by a very strong network of socially motivated students. The idea of transforming lives and being a socially responsible citizen is motivating enough to be a part of this organization. Not everyone is as lucky to have a fulfilling and satisfying life but our team can make a difference by strengthening families, shaping lives, and reconstructing hope through empowerment and education.<span id="dots">...</span><span id="more">The word social motivation clearly illustrates that all the members are elated with this opportunity that stands a place in their vision and insights, fulfilling two purposes of providing a chance to work for a social cause and developing various skills that give a sense of unity, collectiveness and team spirit which are key aspects for the functioning of any organization. This very platform gives us a perception of our responsibility to play a role and have a significant impact on the lives of people who will manifest a similar sense in them and will motivate themselves to help others in their spectrum of life. Along with the satisfaction that we receive while serving others, we also get to know different people across the nation and their day-to-day problems. As such no particular motivation is required to work for a good cause, it just needs to come from the heart of an individual.Thus we are delighted to be a part of this organization that reaches out to the weaker sections of society, works for their upliftment, and believes in bringing happiness to the lives of others.
-            </span></p>
+            <p>LiGHT has come up with a platform to accomplish the necessities of the feeble fragments of a community. It is a unique body whose fabric has been woven by a very strong network of socially motivated students. The idea of transforming lives and being a socially responsible citizen is motivating enough to be a part of this organization. Not everyone is as lucky to have a fulfilling and satisfying life but our team can make a difference by strengthening families, shaping lives, and reconstructing hope through empowerment and education.<span id="dots">...</span><button onclick="changeContent()" id="about-read-more">Read more</button><span id="more">The word social motivation clearly illustrates that all the members are elated with this opportunity that stands a place in their vision and insights, fulfilling two purposes of providing a chance to work for a social cause and developing various skills that give a sense of unity, collectiveness and team spirit which are key aspects for the functioning of any organization. This very platform gives us a perception of our responsibility to play a role and have a significant impact on the lives of people who will manifest a similar sense in them and will motivate themselves to help others in their spectrum of life. Along with the satisfaction that we receive while serving others, we also get to know different people across the nation and their day-to-day problems. As such no particular motivation is required to work for a good cause, it just needs to come from the heart of an individual.Thus we are delighted to be a part of this organization that reaches out to the weaker sections of society, works for their upliftment, and believes in bringing happiness to the lives of others.
+            <button onclick="changeContent()" id="about-read-less" >..read less</button></span></p>
             <div class="center">
 
-          <button onclick="myFunction333()" id="myBtn" >Read more</button>
+
         </div>
           <script>
-function myFunction333() {
+function changeContent() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  var btn2 = document.getElementById("about-read-less");
+  var btn1 = document.getElementById("about-read-more");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
     moreText.style.display = "none";
+    btn1.style.display = "inline";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
+    btn1.style.display = "none";
   }
 }
 </script>
@@ -187,8 +188,10 @@ function myFunction333() {
 
         <section class="section-bg">
             <div class="container">
-                <div class="text-center pt-4 intern-headings">ACTIVITES</div>
-                <hr class="intern-head-underline">
+              <br>
+              <div class="section-header">
+                <h3>ACTIVITES</h3></div>
+
                 <div class="row justify-content-center mt-4 pt-4 mb-4 pb-2">
                     <div class="col-lg-4 col-6 mb-4">
                         <div class="intern-category-card-parent">
@@ -387,8 +390,10 @@ function myFunction333() {
         ============================-->
         <center>
           <div class="container-fluid">
-           <div class="sub-head">Centre Coordinator</div>
-                    <div class="sub-underline"></div>
+            <div class="section-header">
+              <br>
+              <h3>Centre Coordinator</h3></div>
+
                     <div class="row">
                         <div class="text container">
                             <div class="row justify-content-center">
@@ -430,8 +435,10 @@ function myFunction333() {
         </center>
         <center>
            <div class="container">
-             <div class="sub-head">Core Team Members</div>
-                    <div class="sub-underline"></div>
+             <div class="section-header">
+               <br>
+               <h3>Core Team Members</h3></div>
+
                     <div class="row">
                         <div class="text container">
                             <center>

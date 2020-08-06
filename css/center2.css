@@ -16,12 +16,14 @@ body {
     font-size: 25px;
     font-weight: bolder;
 }
-.intern-head-underline {
-    width: 50px;
-    height: 3px;
-    background-color: #18d26e;
-    margin-top: 3px;
+#about-read-more, #about-read-less {
+    border: hidden;
+    padding: 0px 0px;
+    color: #18d26e;
+    background-color: transparent;
+    outline: none;
 }
+
 .section-bg {
     background-image: url('../images/section-bg.jpg');
     background-size: cover;
