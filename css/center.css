@@ -107,7 +107,7 @@ h6 {
     padding-bottom: 20px;
   }
   
-  .section-header::before {
+  /*.section-header::before {
     content: '';
     position: absolute;
     display: block;
@@ -116,7 +116,7 @@ h6 {
     background:rgb(0,228,105);
     bottom: 0;
     left: calc(50% - 25px);
-  }
+  }*/
   
   .section-header h2 {
     font-size: 36px;
