@@ -317,7 +317,7 @@ svg {
     overflow: hidden;
 }
 .card h5 {
-	
+	color: black;
 	font-size:25px;
 	font-weight:300;
 }
