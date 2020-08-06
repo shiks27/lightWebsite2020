@@ -342,16 +342,10 @@ svg {
     color: white;
 }
 
-#extra1 {
-    margin-left: 33%;
-}
-
-@media (max-width:500px) {
-    #extra1 {
-        margin-left: 0;
-    }
+@media (max-width:767px) {
+    
     #extra2 {
-        margin-left: 0%;
+        margin-left: 0% !important;
     }
 }
 
