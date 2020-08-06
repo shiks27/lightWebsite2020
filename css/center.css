@@ -308,7 +308,11 @@ svg {
 .card img {
     overflow: hidden;
 }
-
+.card h5 {
+	color:white;
+	font-size:25px;
+	font-weight:300;
+}
 .card:hover {
     box-shadow: 0 5px 10px rgba(24, 210, 110, 0.55);
     -webkit-box-shadow: 0 5px 10px rgba(24, 210, 110, 0.55);
