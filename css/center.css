@@ -305,7 +305,7 @@ svg {
     text-align: center;
 }
 .card-text {
-    font-size: smaller;
+    font-size: 18px;
     padding-left: 2%;
     padding-right: 2%;
 }
