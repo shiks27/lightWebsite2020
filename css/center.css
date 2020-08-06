@@ -317,7 +317,7 @@ svg {
     overflow: hidden;
 }
 .card h5 {
-	color:white;
+	
 	font-size:25px;
 	font-weight:300;
 }
@@ -342,10 +342,16 @@ svg {
     color: white;
 }
 
-@media (max-width:767px) {
-    
+#extra1 {
+    margin-left: 33%;
+}
+
+@media (max-width:500px) {
+    #extra1 {
+        margin-left: 0;
+    }
     #extra2 {
-        margin-left: 0% !important;
+        margin-left: 0%;
     }
 }
 
