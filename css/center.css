@@ -319,7 +319,7 @@ svg {
 .card h5 {
 	color: black;
 	font-size:25px;
-	font-weight:300;
+	font-weight:500;
 }
 .card:hover {
     box-shadow: 0 5px 10px rgba(24, 210, 110, 0.55);
