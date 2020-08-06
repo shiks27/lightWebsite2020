@@ -20,7 +20,7 @@
     background-attachment: fixed !important;
 }
 hr {
-    background-color: #18d26e !important;
+    background-color: #343a40 !important;
     height: 1px;
 }
 .sub-head {
@@ -32,7 +32,7 @@ hr {
 .sub-underline {
     height: 4px;
     width: 60px;
-    background-color: #18d26e;
+    background-color: #343a40;
 }
 .text {
     margin-top: 30px;
