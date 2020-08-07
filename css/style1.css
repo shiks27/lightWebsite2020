@@ -190,6 +190,12 @@ img:not(.prof-img) {
 	    width: 94%;
     }
 }
+@media (min-width: 768px) {
+    .overlay2 {
+        top: 4%;
+        height: 92%;
+    }
+}
 .overlay-text {
     color: white;
     position: absolute;
