@@ -403,7 +403,7 @@ svg {
 
 
 /* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
 @media screen and (max-width: 599px) {
     .timeline ol,
@@ -452,7 +452,7 @@ svg {
         display: none;
     }
 }
-
+*/
 
 
 .card {
