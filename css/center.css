@@ -225,18 +225,11 @@ body.scrollable {
 	}
 }
 /*Map Section*/
-.section1 {
-	margin-top:10px;
-}
 svg {
-        width: 200%;
+        max-width: 100% !important;
         height: auto;
         display: block;
     }
-.information {
-    
-    padding-top: 100px;
-}
     
     .heyo:hover {
         transform: scale(0.99);
