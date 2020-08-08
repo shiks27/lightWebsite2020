@@ -226,7 +226,7 @@ body.scrollable {
 }
 /*Map Section*/
 svg {
-        max-width: 100% !important;
+        width: 200%;
         height: auto;
         display: block;
     }
