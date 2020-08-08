@@ -224,7 +224,7 @@ img:not(.prof-img) {
     color: white;
 }
 .social-icon:hover {
-    color: #fed136 !important;
+    color: #18d26e !important;
 }
 .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
     -ms-touch-action: auto;

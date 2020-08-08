@@ -10,6 +10,7 @@
 --------------------------------------------------------------*/
 body {
     overflow-x: hidden;
+    padding: 0 !important;
 }
 
 .intern-headings {
@@ -78,46 +79,7 @@ body {
     font-weight: 600;
     font-family: Poppins;
 }
-.modal img {
-    width: 70%;
-}
 
-@media (max-width:500px) {
-    .modal img {
-        width: 30%;
-        margin-bottom: 15px;
-    }
-    .modal ul.intern-positions {
-        list-style-type: none;
-        font-size: 1.2em;
-        margin-left: -5%;
-    }
-}
-
-
-@media (max-width: 992px) and (min-width: 760px) {
-    .modal img {
-        width: 100%;
-    }
-}
-@media (max-width: 760px) and (min-width: 300px) {
-    .modal img {
-        width: 30%;
-        margin-left: 30%;
-        padding-bottom: 10px;
-    }
-}
-.modal li {
-    color: rgb(104, 104, 104);
-    margin-left: -5%;
-    font-size: 0.9em;
-}
-
-.modal ul.intern-positions {
-    list-style-type: none;
-    font-size: 1.2em;
-    margin-left: -1%;
-}
 .center {
   position:relative;
   top:-44px;
@@ -185,4 +147,20 @@ body {
 .intern-category-card-button .btn:active {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+.carousel-control span.glyphicon {
+    font-size: 25px;
+}
+@media (max-width: 600px) {
+    .carousel-control span.glyphicon {
+        font-size: 20px;
+        top: 25%;
+    }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+    .carousel-control span.glyphicon {
+        font-size: 20px;
+        top: 30%;
+    }
 }
