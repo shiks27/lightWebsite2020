@@ -29,7 +29,6 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/center.css" rel="stylesheet">
-  <link href="css/center.js" rel="stylesheet">
 
 </head>
 
@@ -139,26 +138,30 @@
         </div>
         <div class="col-md-6">
             <div class="information mt-4 pr-lg-5">
+                <header class="section-header mb-0 pt-lg-5">
+                    <h3 class="light-center-name">LiGHT Kharagpur</h3>
+                  </header>
+                <p class="text-center light-center-info">Kharagpur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?</p>
                 <div class="reach">
-                     <header class="section-header">
-      <h3>Our Reach</h3>
-    </header>
+                    <header class="section-header mb-2">
+                        <h3>Our Reach</h3>
+                    </header>
                    <div class="row justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="info">
-                                    <h1 class="counter pt-2">14</h1>
+                                    <h1 class="counter pt-2" style="font-weight: 600;">14</h1>
                                     <h2>Centres</h2>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="info">
-                                    <h1 class="counter pt-2">12</h1>
+                                    <h1 class="counter pt-2" style="font-weight: 600;">12</h1>
                                     <h2>States</h2>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12">
                                 <div class="info">
-                                    <h1 class="counter pt-2">161</h1>
+                                    <h1 class="counter pt-2" style="font-weight: 600;">161</h1>
                                     <h2>Active Members</h2>
                                 </div>
                             </div>
@@ -562,10 +565,20 @@
             return x.id == currState
         });
         if (currStateInfo[0]) {
-            console.log("yes");
             $(this).attr("class", "enabled heyo");
             $description.addClass('active');
             $description.html($(this).attr('id') + ":<br> " + currStateInfo[0].centre);
+            $('.light-center-name').html('LiGHT '+currStateInfo[0].centre);
+            if(currStateInfo[0].centre === 'Kharagpur') $('.light-center-info').html('Kharagpur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'FFI') $('.light-center-info').html('FFI Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Gaya') $('.light-center-info').html('Gaya Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Sukhmani') $('.light-center-info').html('Sukhmani Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Chennai') $('.light-center-info').html('Chennai Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Wardha, Samvedna') $('.light-center-info').html('Wardha, Samvedna Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Raipur') $('.light-center-info').html('Raipur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Pallakad') $('.light-center-info').html('Pallakad Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Gwalior') $('.light-center-info').html('Gwalior Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
+            if(currStateInfo[0].centre === 'Jaipur') $('.light-center-info').html('Jaipur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam dicta nesciunt quam tempora, at ut ipsam nisi eveniet? Cumque ducimus rem placeat a quaerat dolores laudantium doloribus voluptate explicabo?');
         }
     }, function() {
         $description.removeClass('active');
