@@ -661,11 +661,9 @@
     }, function() {
         $description.removeClass('active');
     });
-    $(window).load(function() {
-        var topalign = ($(window).width < 992) ? 410 : 500
-    })
+    var topalign= ($(window).width() < 992) ? 410 : 500
     $(window).resize(function(){
-        if($(window).width < 992) topalign=410
+        if($(window).width() < 992) topalign=410
         else topalign=500
     })
     $(document).on('mousemove', function(e) {
