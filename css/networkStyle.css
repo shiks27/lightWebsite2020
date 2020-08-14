@@ -590,6 +590,36 @@ a img {
 
 }
 
+.bookblock-page-head {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-top: 13px;
+  font-weight: 600;
+} 
+.page5img {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .bookblock-page-head {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .page5img {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 992px) and (min-width: 700px) {
+  .page5img {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 90%;
+  }
+}
+
+
 /* ============================akshay's css ends here*/
 
 
