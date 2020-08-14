@@ -17,6 +17,11 @@ body {
     font-size: 25px;
     font-weight: bolder;
 }
+#za{
+  line-height: 1.75;
+  font-family: 'Montserrat';
+  font-weight: 450;
+}
 #about-read-more, #about-read-less {
     border: hidden;
     padding: 0px 0px;
@@ -43,7 +48,7 @@ body {
 }
 
 .intern-category-card {
-    background-color: #f7f7f7;
+    background-color: #343a40;
     border-radius: 5px;
     padding: 25px 10px;
     height: 100%;
@@ -65,6 +70,7 @@ body {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 0;
+    color:white;
 }
 
 .modal h4 {
