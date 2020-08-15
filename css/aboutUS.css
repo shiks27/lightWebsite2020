@@ -95,13 +95,17 @@ h1{
 
         #tab1, #tab2, #tab3, #tab4, #tab5 , #tab6 , #tab7{
             border: none;
+            outline:none;
             background-color: aliceblue;
         }
 
-        #tab1, #tab2, #tab3, #tab4, #tab5 , #tab6 , #tab7:active{
+        #tab1, #tab2, #tab3, #tab4, #tab5 , #tab6 , #tab7:focus{
             border: none;
-            background-color: olive;
+            outline:none;
+            background-color: aliceblue;
         }
+
+        
 
 /***akshay's code css***/
 .motivation-cards {
