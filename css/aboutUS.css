@@ -98,6 +98,11 @@ h1{
             background-color: aliceblue;
         }
 
+        #tab1, #tab2, #tab3, #tab4, #tab5 , #tab6 , #tab7:hover{
+            border: none;
+            background-color: aliceblue;
+        }
+
 /***akshay's code css***/
 .motivation-cards {
     height: 270px;
