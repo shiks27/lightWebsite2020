@@ -64,8 +64,8 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
-    <div class="intro-container">
+  <section style="background-color: black;">
+    <!-- <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
         <ol class="carousel-indicators"></ol>
@@ -130,6 +130,17 @@
         </a>
 
       </div>
+    </div> -->
+    <div class="container-fluid">
+      <center>
+        <a id="play-video" class="video-play-button" href="#">
+          <span></span>
+        </a>
+        <video id="intro-video">
+          <source src="Placeholder Video.mp4">
+        </video>
+        
+      </center>
     </div>
   </section><!-- #intro -->
 
@@ -713,6 +724,26 @@
     }
   }
   
+  </script>
+  <script>
+    var video = document.getElementById('intro-video');
+    $('#play-video').click(function() {
+      if(video.paused) {
+        video.play();
+        playing=true;
+        video.controls=true;
+        $('#play-video').hide();
+      }
+    })
+    video.onended = function() {
+      $('#play-video').show();
+      video.controls = false;
+    }
+    video.onpause = function() {
+      $('#play-video').show();
+      video.controls = false;
+    }
+    
   </script>
   
 
