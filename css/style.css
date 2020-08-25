@@ -1588,7 +1588,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro-video {
-  width: 90%;
+  width: 80%;
 }
 @media (max-width: 1400px) and (min-width: 1100px) {
   .video-play-button {
@@ -1707,5 +1707,20 @@ h2 {
 	text-align:center;
 	font-size: 18px;
 	color: black;
+}
+
+.join-us-img {
+  width: 60%;
+}
+@media (max-width: 600px) {
+  .join-us-img {
+    width: 80%;
+  }
+}
+.join-us-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 	
