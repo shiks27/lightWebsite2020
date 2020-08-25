@@ -546,6 +546,7 @@ svg {
 
 .info h1,
 h2 {
+    color: black;
     text-align: center;
 }
 
