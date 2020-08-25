@@ -1663,6 +1663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .info {
+    color:black;
     padding: 5px;
     background-color: #18d26e;
     border-radius: 10px;
