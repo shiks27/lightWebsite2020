@@ -1703,3 +1703,9 @@ h2 {
         margin-top: 0 !important;
     }
 }
+.info-text p{
+	text-align:center;
+	font-size: 18px;
+	color: black;
+}
+	
