@@ -40,7 +40,7 @@
 
   <!--js scripts used-->
     <script src="networkJS/modernizr.custom.js"></script>
-
+    <script src="js/network.js"></script>
 
   <!--link scripts used-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -186,10 +186,10 @@
 										<div class="row">
 											<div class="col-6">
                         <div class="text-center bookblock-page-head">What does Ram need to have?</div>
-                        <center><img src="img/network/bookblock/page5.png" class="page5img"></center>                        
+                        <center><img src="img/network/bookblock/page5.png" class="page5img"></center>
                         <div class="mb-2">Determination and dedication to bring a change in society.</div>
                         <div class="mb-2">Can devote around 7 hours per week.</div>
-                        <div>Is willing to take up responsibility and fulfill them truthfully.</div>                        
+                        <div>Is willing to take up responsibility and fulfill them truthfully.</div>
 											</div>
 											<div class="col-6">
                         <div class="text-center bookblock-page-head">How can Ram help us?</div>
@@ -203,8 +203,8 @@
 									<div class="container-fluid" style=" height: 100%; overflow: hidden;">
 										<div class="row">
 											<div class="col-6">
-                        <center><img src="img/network/bookblock/reach.png" style="width: 60%; margin-top: 35px;"></center>                        
-                        <p style="margin-top: 30px">By reaching out local people/school for implementing planned projects in his locality/college.</p>                       
+                        <center><img src="img/network/bookblock/reach.png" style="width: 60%; margin-top: 35px;"></center>
+                        <p style="margin-top: 30px">By reaching out local people/school for implementing planned projects in his locality/college.</p>
 											</div>
 											<div class="col-6">
                         <center><img src="img/network/bookblock/proposal.png" style="width: 70%; margin-top: 30px;"></center>
@@ -227,90 +227,8 @@
 		<script src="networkJS/jquerypp.custom.js"></script>
 		<script src="networkJS/jquery.bookblock.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-		<script>
-			var Page = (function() {
+    <script src="js/network.js"></script>
 
-				var config = {
-						$bookBlock : $( '#bb-bookblock' ),
-						$navNext : $( '#bb-nav-next' ),
-						$navPrev : $( '#bb-nav-prev' ),
-						$navFirst : $( '#bb-nav-first' ),
-						$navLast : $( '#bb-nav-last' )
-					},
-					init = function() {
-						config.$bookBlock.bookblock( {
-							speed : 800,
-							shadowSides : 0.8,
-							shadowFlip : 0.7
-						} );
-						initEvents();
-					},
-					initEvents = function() {
-
-						var $slides = config.$bookBlock.children();
-
-						// add navigation events
-						config.$navNext.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'next' );
-							return false;
-						} );
-
-						config.$navPrev.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'prev' );
-							return false;
-						} );
-
-						config.$navFirst.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'first' );
-							return false;
-						} );
-
-						config.$navLast.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'last' );
-							return false;
-						} );
-
-						// add swipe events
-						$slides.on( {
-							'swipeleft' : function( event ) {
-								config.$bookBlock.bookblock( 'next' );
-								return false;
-							},
-							'swiperight' : function( event ) {
-								config.$bookBlock.bookblock( 'prev' );
-								return false;
-							}
-						} );
-
-						// add keyboard events
-						$( document ).keydown( function(e) {
-							var keyCode = e.keyCode || e.which,
-								arrow = {
-									left : 37,
-									up : 38,
-									right : 39,
-									down : 40
-								};
-
-							switch (keyCode) {
-								case arrow.left:
-									config.$bookBlock.bookblock( 'prev' );
-									break;
-								case arrow.right:
-									config.$bookBlock.bookblock( 'next' );
-									break;
-							}
-						} );
-					};
-
-					return { init : init };
-
-			})();
-		</script>
-		<script>
-				Page.init();
-
-		</script>
   <!--================================bookblock section code ends here   --->
 
 
@@ -453,7 +371,7 @@
   <!--from here chinmay's code starts ----------->
   <section id="about"><br>
     <div class="container fluid">
-        
+
 	 <div class="row" style=" justify-content: center;">
 			<header class="section-header"><h3>who can join us?</h3></header>
          </div>
@@ -520,57 +438,7 @@ workers</p>
 <br>
 <br>
 <!--why to join us? starts -->
-<style>
-.rajcolumn {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
 
-.rajrow {/*margin: 0 -5px;*/}
-
-.rajrow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.rajcard p {
-  margin-top: 15px;
-}
-@media screen and (max-width: 700px) {
-  .rajcolumn {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-.rajcard{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height :200px;
-     padding: 16px;
-     text-align: center;
-     background-color: #f1f1f1;
-}
-@media (min-width: 800px) and (max-width: 1170px){
-    .rajcard{
-        height: 300px;
-    }
-}
-@media (min-width: 700px) and (max-width: 850px){
-    .rajcard{
-        height: 430px;
-    }
-}
-@media (min-width: 700px){
-    .rajcard{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        text-align: center;
-        background-color: #f1f1f1;
-    }
-}
-</style>
 <header class="section-header" id="join_us">
   <h3>Why would Ram join us?</h3>
 </header>
@@ -645,7 +513,7 @@ workers</p>
                               </p>
 
 
-                          </div> 
+                          </div>
                           <div class="col-md-4 text-center">
                             <div class="reach-card wow fadeInUp">
                               <span class="counter">14</span><br>
@@ -1111,19 +979,8 @@ workers</p>
   <script src="networkJS/jquery.counterup.min.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-	  <script>
-        $(document).ready(function() {
-            var stack = $('.stack').paperstack({});
 
-            $('#aadityanext').click(stack.next);
-            $('#aadityaprev').click(stack.previous);
 
-            $('.counter').counterUp({
-              time: 1500
-            })
-        });
-    </script>
 
 
 </body>
