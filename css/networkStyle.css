@@ -3,6 +3,55 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
+.rajcolumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.rajrow {/*margin: 0 -5px;*/}
+
+.rajrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rajcard p {
+  margin-top: 15px;
+}
+@media screen and (max-width: 700px) {
+  .rajcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.rajcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height :200px;
+     padding: 16px;
+     text-align: center;
+     background-color: #f1f1f1;
+}
+@media (min-width: 800px) and (max-width: 1170px){
+    .rajcard{
+        height: 300px;
+    }
+}
+@media (min-width: 700px) and (max-width: 850px){
+    .rajcard{
+        height: 430px;
+    }
+}
+@media (min-width: 700px){
+    .rajcard{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+}
 h1{
   text-decoration-color: black;
 }
@@ -575,7 +624,7 @@ a img {
 
 }
 #bb-nav-next {
-	
+
 	position: absolute;
 	top: 0;
 	right: 15px;
@@ -595,7 +644,7 @@ a img {
   line-height: 1.2;
   margin-top: 13px;
   font-weight: 600;
-} 
+}
 .page5img {
   width: 95%;
   margin-top: 10px;
@@ -735,7 +784,7 @@ a img {
     font-size: 20px;
     margin-top: 40px;
     color: white;
-    
+
   }
   .top2{
     height:770px;
