@@ -155,6 +155,11 @@ body {
     transform: scale(1.05);
 }
 
+#more {display: none;}
+#more8 {display: none;}
+#more9 {display: none;}
+#more10 {display: none;}
+
 .carousel-control span.glyphicon {
     font-size: 25px;
 }
