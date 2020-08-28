@@ -513,7 +513,7 @@ svg {
 
 
 .center-main-head {
-    background-image: url("img/members/team.jpg");
+    background-image: url("../img/members/team.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
