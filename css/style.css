@@ -68,6 +68,20 @@ h6 {
   padding-top: 12px;
   color: #fff;
 }
+/* Register Form */
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px;
+  display: inline;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+  float: left;
+  margin-top: 5%;
+}
 
 /* Prelaoder */
 
@@ -671,6 +685,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+  border: 5px solid black;
+  box-shadow: 8px 15px gray;
+}
+#about .about-col:hover {
+  transform: scale(1.1);
 }
 
 #about .about-col .img {
