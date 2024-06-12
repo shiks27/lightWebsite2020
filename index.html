@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Light</title>
+  <title>LiGHT</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -15,8 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -35,7 +37,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">LIGHT</a></h1>
+        <h1><a href="#intro" class="scrollto">LiGHT</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -344,18 +346,104 @@
                 <!-- Trigger/Open The Modal -->
               <a data-toggle="modal" data-target="#myModal" class="btn-get-started scrollto mt-2" style="cursor: pointer;"> Register </a>
               <!-- Modal -->
-              <div id="myModal" class="modal fade" role="dialog">
+              <div id="myModal" class="modal fade" role="dialog" >
                 <div class="modal-dialog">
 
                   <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      
-                      <h4 class="modal-title">Modal Header</h4>
+                  <div class="modal-content" >
+                    <div class="modal-header" style="background-color: #a8dbe7; border: 2px solid black;">
+                   
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body">
-                      <p>Some text in the modal.</p>
+                    <div class="modal-body" style="background-color: #c4c8c9;border: 2px solid black;" >
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="well well-sm">
+                                    <form class="form-horizontal" method="post" style="background:'#ecf0f1'">
+                                        <fieldset>
+                                            <legend class="text-center header" style="margin-top: 2%;">Register Your Center</legend>
+                    
+                                            <div class="form-group">
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="form-group">
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="form-group">
+                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-users bigicon"></i></span>
+                                                <div class="col-md-8">
+                                                    <input id="numberofmember" name="members" type="text" placeholder="Number of Members " class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                              <div class="col-md-8">
+                                                  <input id="professor" name="professor" type="text" placeholder="Name of Professor" class="form-control">
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-university bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <input id="phone" name="phone" type="text" placeholder="College Name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="far fa-lightbulb" style="float: left;font-size: 30px;margin-top: 7%;color: rgb(7, 131, 180);"></i></span>
+                                          <div class="col-md-8">
+                                              <input id="phone" name="phone" type="text" placeholder="Nearby LiGHT Center" class="form-control">
+                                          </div>
+                                      </div>
+                                     
+                                            <div class="form-group">
+                                                <div class="col-md-12 text-center">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" name="your name" placeholder="First Name">
+                      </div>
+                      <div class="col">
+                        <input type="text" name="your name" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" name="clg" placeholder="College Name">
+                      </div>
+                      <div class="col">
+                        <input type="text" name="clg" placeholder="Nearby LiGHT Center">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" name="number" placeholder="Number of Members">
+                      </div>
+                      <div class="col">
+                        <input type="text" name="professor" placeholder="Name of professor">
+                      </div>
+                    </div> -->
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
